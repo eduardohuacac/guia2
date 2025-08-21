@@ -20,6 +20,7 @@ class MainApp extends StatelessWidget {
               ),
               SizedBox(width: 20),
               Expanded(
+                flex: 2,
                 child: Image.asset('assets/images/TI2.jpg', fit: BoxFit.cover),
               ),
               SizedBox(width: 20),
