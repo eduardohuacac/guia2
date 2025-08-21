@@ -13,20 +13,13 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
-              Expanded(
-                child: Image.asset('assets/images/TI.png', fit: BoxFit.cover),
-              ),
-              SizedBox(width: 20),
-              Expanded(
-                flex: 2,
-                child: Image.asset('assets/images/TI2.jpg', fit: BoxFit.cover),
-              ),
-              SizedBox(width: 20),
-              Expanded(
-                child: Image.asset('assets/images/TI3.avif', fit: BoxFit.cover),
-              ),
+              Icon(Icons.star, color: Colors.green[500]),
+              Icon(Icons.star, color: Colors.green[500]),
+              Icon(Icons.star, color: Colors.green[500]),
+              const Icon(Icons.star, color: Colors.black),
+              const Icon(Icons.star, color: Colors.black),
             ],
           ),
         ),
