@@ -12,12 +12,24 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Column(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Image.asset('assets/images/TI.png'),
-              Image.asset('assets/images/TI2.jpg'),
-              Image.asset('assets/images/TI3.avif'),
+              SizedBox(
+                width: 80,
+                height: 80,
+                child: Image.asset('assets/images/TI.png', fit: BoxFit.cover),
+              ),
+              SizedBox(
+                width: 80,
+                height: 80,
+                child: Image.asset('assets/images/TI2.jpg', fit: BoxFit.cover),
+              ),
+              SizedBox(
+                width: 80,
+                height: 80,
+                child: Image.asset('assets/images/TI3.avif', fit: BoxFit.cover),
+              ),
             ],
           ),
         ),
