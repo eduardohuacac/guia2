@@ -13,21 +13,17 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(
-                width: 80,
-                height: 80,
+              Expanded(
                 child: Image.asset('assets/images/TI.png', fit: BoxFit.cover),
               ),
-              SizedBox(
-                width: 80,
-                height: 80,
+              SizedBox(width: 20),
+              Expanded(
                 child: Image.asset('assets/images/TI2.jpg', fit: BoxFit.cover),
               ),
-              SizedBox(
-                width: 80,
-                height: 80,
+              SizedBox(width: 20),
+              Expanded(
                 child: Image.asset('assets/images/TI3.avif', fit: BoxFit.cover),
               ),
             ],
